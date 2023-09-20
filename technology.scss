@@ -1,0 +1,144 @@
+footer{
+    display: flex;
+}
+h1{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 0px;
+    width: 280%;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+h3{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-size: 18px;
+    margin: 100px 0px 0px 0px;
+    color: #D0D6F9;
+}
+p{
+    width: 60%;
+    font-size: 18px;
+    color: #D0D6F9;
+    margin-bottom: 150px;
+}
+#img-technology{
+    display: inline;
+    width: 515px;
+    height: 527px;
+    background: url('./assets/technology/image-launch-vehicle-portrait.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+    z-index: 1;
+
+}
+.c-right{
+    display: flex;
+}
+.c-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    height: 350px;
+    margin-right: 50px;
+    margin-top: 60px;
+    button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        opacity: 0.25;
+        border: 1px solid #FFFFFF;
+        font-family: 'Bellefair';
+        font-size: 32px;
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+    #technology-circle1{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:970px) {
+    #img-technology{
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .c-left{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        //justify-content: space-between;
+    }
+    #img-technology{
+        width: 100%;
+        height: 310px;
+        background: url('./assets/technology/image-launch-vehicle-landscape.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    h1{
+        width: auto;
+    }
+    footer{
+        flex-direction: row;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        button{
+            margin-right: 50px;
+        }
+    }
+    p{
+        width: 100%;
+        margin-bottom: 0px;
+        text-wrap: balance;
+    }
+    h3{
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-size: 18px;
+        margin: 0px;
+        color: #D0D6F9;
+    }
+    h1{
+        margin-bottom: 50px;
+        width: 100%;
+        right: -10%;
+    }
+}
+@media screen and (max-width:375px) {
+    #img-technology{
+        width: 375px;
+        height: 170px;
+        z-index: 1;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 0px;
+        margin-bottom: 20px;
+        z-index: 1;
+        width: auto;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 0px;
+        margin: 20px 0px 10px 0px;
+        z-index: 1;
+    }
+    p{
+        font-size: 15px;
+        margin-bottom: 0px;
+        z-index: 1;
+    }
+}

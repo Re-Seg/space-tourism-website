@@ -1,0 +1,124 @@
+h1{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 0px;
+    width: 180%;
+    margin-bottom: 50px;
+}
+h3{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-size: 28px;
+    margin: 100px 0px 0px 0px;
+    color: #D0D6F9;
+}
+p{
+    width: 60%;
+    font-size: 18px;
+    color: #D0D6F9;
+    margin-bottom: 150px;
+}
+#img-crew{
+    display: inline;
+    width: 568.07px;
+    height: 712px;
+    background: url('./assets/crew/image-douglas-hurley.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin:20px 0px 0px 50px ;
+}
+.c-right{
+    display: flex;
+}
+#crew-point1, #crew-point2, #crew-point3, #crew-point4{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+footer{
+    display: flex;
+}
+#crew-point1{
+    opacity: 1;
+}
+@media screen and (max-width:1235px) {
+    #img-crew{
+        margin:0px ;
+    }
+}
+@media screen and (max-width:768px) {
+    #img-crew{
+        width: 456.37px;
+        height: 572px;
+        background-size: auto 100%;
+        background-position-x: 50%;
+    }
+    h1{
+        width: 120%;
+    }
+    h3{
+        margin: 0px;
+    }
+    p{
+        width: 70%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .c-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; 
+        }
+    }
+    .c-right{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    #img-crew{
+        width:327px;
+        height: 223px;
+        z-index: 1;
+    } 
+    h1{
+        font-size: 24px;
+        line-height: 0px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 0px;
+        margin: 20px 0px 10px 0px;
+        z-index: 1;
+    }
+    p{
+        font-size: 15px;
+        margin-bottom: 0px;
+        z-index: 1;
+    }
+    .c-left{
+        flex-direction: column-reverse;
+        z-index: 1;
+    }
+    .c-right{
+        border-bottom: 0.8px solid rgba(255, 255, 255, 0.25);
+        margin-right: 5%;
+    }
+}
