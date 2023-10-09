@@ -9,7 +9,6 @@ var e1 = false ;
 var e2 = false ;
 var e3 = false ;
 var t = '';
-
 function none () {
     technologyCircle1.style.opacity = '0.17';
     technologyCircle2.style.opacity = '0.17';
@@ -18,7 +17,6 @@ function none () {
     e2 = false ;
     e3 = false ;
 }
-
 function opacity () {
     this.style.opacity = '0.7';
 }
